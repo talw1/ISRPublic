@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Israel Trail Running</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #2e8b57 0%, #247146 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin: -20px -20px 30px -20px;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        h2 { color: #2e8b57; margin: 30px 0 15px; border-bottom: 2px solid #2e8b57; padding-bottom: 10px; }
+        p { margin: 15px 0; font-size: 1.1em; }
+        ul { margin: 10px 0 10px 30px; }
+        li { margin: 8px 0; }
+        .lang-toggle {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .lang-btn {
+            padding: 12px 30px;
+            margin: 0 10px;
+            background: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .lang-btn:hover {
+            background: #247146;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .lang-btn.active {
+            background: #1a5a32;
+        }
+        .feature-box {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #2e8b57;
+        }
+        .contact-box {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #ffc107;
+        }
+        .section { margin: 30px 0; }
+        .hebrew { direction: rtl; text-align: right; }
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+        }
+        .footer a {
+            color: #2e8b57;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 10px; }
+            h1 { font-size: 1.8em; }
+            .lang-btn { padding: 10px 20px; margin: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏃 Israel Trail Running</h1>
+            <p style="font-size: 1.2em;">About / אודות</p>
+        </div>
+
+        <div class="lang-toggle">
+            <button class="lang-btn active" onclick="showLanguage('en')">English</button>
+            <button class="lang-btn" onclick="showLanguage('he')">עברית</button>
+        </div>
+
+        <!-- ENGLISH VERSION -->
+        <div id="english" class="section">
+            <h2>About Israel Trail Running</h2>
+            <p>
+                <strong>Israel Trail Running</strong> is your comprehensive guide to discovering the best trail running routes and races across Israel. 
+                Whether you're a beginner looking for your first trail or an experienced ultra runner seeking your next challenge, 
+                our app helps you explore Israel's beautiful landscapes on foot.
+            </p>
+
+            <div class="feature-box">
+                <h2>✨ Features</h2>
+                <ul>
+                    <li><strong>19+ Curated Trail Routes</strong> - Explore diverse trails from north to south</li>
+                    <li><strong>Race Calendar</strong> - Stay updated on upcoming trail races and marathons</li>
+                    <li><strong>Detailed Information</strong> - Distance, difficulty, elevation, and route type</li>
+                    <li><strong>Interactive Maps</strong> - Visualize routes and plan your adventures</li>
+                    <li><strong>Bilingual Support</strong> - Full Hebrew and English interface</li>
+                    <li><strong>GPX Downloads</strong> - Navigate trails with your GPS device</li>
+                </ul>
+            </div>
+
+            <h2>🎯 Our Mission</h2>
+            <p>
+                To make trail running accessible to everyone in Israel by providing accurate, up-to-date information about 
+                trails and events. We believe in connecting people with nature and promoting an active, healthy lifestyle 
+                through trail running.
+            </p>
+
+            <h2>🏔️ Trail Regions</h2>
+            <p>Discover routes across all of Israel:</p>
+            <ul>
+                <li><strong>North:</strong> Galilee, Golan Heights, Carmel</li>
+                <li><strong>Center:</strong> Sharon, Judean Hills</li>
+                <li><strong>Jerusalem:</strong> Jerusalem Hills, surrounding areas</li>
+                <li><strong>South:</strong> Negev Desert, Eilat Mountains</li>
+            </ul>
+
+            <h2>📱 App Information</h2>
+            <p><strong>Version:</strong> 1.0.0</p>
+            <p><strong>Platform:</strong> Android & iOS</p>
+            <p><strong>Developer:</strong> Israel Trail Running</p>
+            <p><strong>Last Updated:</strong> January 2026</p>
+
+            <h2>🙏 Acknowledgments</h2>
+            <p>This app is made possible thanks to:</p>
+            <ul>
+                <li><strong>Trail Data:</strong> Community contributions and official sources</li>
+                <li><strong>Race Information:</strong> Event organizers and running clubs</li>
+                <li><strong>Technology:</strong> Built with Expo, React Native, and modern web technologies</li>
+            </ul>
+
+            <div class="contact-box">
+                <h2>📧 Contact Us</h2>
+                <p><strong>Email:</strong> israeltrailrunning@gmail.com</p>
+                <p><strong>Address:</strong> Ramat Hasharon, Israel</p>
+                <p>We welcome your feedback, trail suggestions, and race information!</p>
+            </div>
+
+            <h2>⚖️ Legal</h2>
+            <p>
+                <a href="index.html" style="color: #2e8b57; text-decoration: underline;">Privacy Policy</a> - 
+                We respect your privacy and don't collect personal information.
+            </p>
+        </div>
+
+        <!-- HEBREW VERSION -->
+        <div id="hebrew" class="section hebrew" style="display: none;">
+            <h2>אודות ריצת שטח ישראל</h2>
+            <p>
+                <strong>ריצת שטח ישראל</strong> הוא המדריך המקיף שלך לגילוי מסלולי ריצת השטח והמרוצים הטובים ביותר ברחבי ישראל.
+                בין אם אתה מתחיל שמחפש את השביל הראשון שלו או רץ אולטרה מנוסה שמחפש את האתגר הבא שלו,
+                האפליקציה שלנו עוזרת לך לחקור את הנופים היפים של ישראל ברגל.
+            </p>
+
+            <div class="feature-box">
+                <h2>✨ תכונות</h2>
+                <ul>
+                    <li><strong>19+ מסלולים מוכנים</strong> - חקור מסלולים מגוונים מצפון לדרום</li>
+                    <li><strong>לוח מרוצים</strong> - הישאר מעודכן במרוצי שטח ומרתונים קרובים</li>
+                    <li><strong>מידע מפורט</strong> - מרחק, קושי, גובה וסוג מסלול</li>
+                    <li><strong>מפות אינטראקטיביות</strong> - צפה במסלולים ותכנן את ההרפתקאות שלך</li>
+                    <li><strong>תמיכה דו-לשונית</strong> - ממשק מלא בעברית ואנגלית</li>
+                    <li><strong>הורדות GPX</strong> - נווט במסלולים עם מכשיר ה-GPS שלך</li>
+                </ul>
+            </div>
+
+            <h2>🎯 המשימה שלנו</h2>
+            <p>
+                להפוך את ריצת השטח לנגישה לכולם בישראל על ידי מתן מידע מדויק ועדכני על מסלולים ואירועים.
+                אנו מאמינים בחיבור אנשים לטבע ובקידום אורח חיים פעיל ובריא באמצעות ריצת שטח.
+            </p>
+
+            <h2>🏔️ אזורי מסלולים</h2>
+            <p>גלה מסלולים בכל רחבי ישראל:</p>
+            <ul>
+                <li><strong>צפון:</strong> גליל, רמת הגולן, כרמל</li>
+                <li><strong>מרכז:</strong> שרון, הרי יהודה</li>
+                <li><strong>ירושלים:</strong> הרי ירושלים, אזורים סמוכים</li>
+                <li><strong>דרום:</strong> מדבר נגב, הרי אילת</li>
+            </ul>
+
+            <h2>📱 מידע על האפליקציה</h2>
+            <p><strong>גרסה:</strong> 1.0.0</p>
+            <p><strong>פלטפורמה:</strong> Android & iOS</p>
+            <p><strong>מפתח:</strong> Israel Trail Running</p>
+            <p><strong>עודכן לאחרונה:</strong> ינואר 2026</p>
+
+            <h2>🙏 תודות</h2>
+            <p>אפליקציה זו מתאפשרת הודות ל:</p>
+            <ul>
+                <li><strong>נתוני מסלולים:</strong> תרומות קהילה ומקורות רשמיים</li>
+                <li><strong>מידע על מרוצים:</strong> מארגני אירועים ומועדוני ריצה</li>
+                <li><strong>טכנולוגיה:</strong> נבנה עם Expo, React Native וטכנולוגיות מתקדמות</li>
+            </ul>
+
+            <div class="contact-box">
+                <h2>📧 צור קשר</h2>
+                <p><strong>דוא״ל:</strong> israeltrailrunning@gmail.com</p>
+                <p><strong>כתובת:</strong> רמת השרון, ישראל</p>
+                <p>אנו מברכים על המשוב שלך, הצעות למסלולים ומידע על מרוצים!</p>
+            </div>
+
+            <h2>⚖️ משפטי</h2>
+            <p>
+                <a href="index.html" style="color: #2e8b57; text-decoration: underline;">מדיניות פרטיות</a> - 
+                אנו מכבדים את פרטיותך ולא אוספים מידע אישי.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>
+                <a href="index.html">Privacy Policy / מדיניות פרטיות</a> •
+                <a href="mailto:israeltrailrunning@gmail.com">Contact / צור קשר</a>
+            </p>
+            <p style="margin-top: 10px;">© 2026 Israel Trail Running | ריצת שטח ישראל</p>
+            <p style="font-size: 0.9em; margin-top: 5px;">All Rights Reserved | כל הזכויות שמורות</p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(lang) {
+            const enDiv = document.getElementById('english');
+            const heDiv = document.getElementById('hebrew');
+            const buttons = document.querySelectorAll('.lang-btn');
+            
+            if (lang === 'en') {
+                enDiv.style.display = 'block';
+                heDiv.style.display = 'none';
+                buttons[0].classList.add('active');
+                buttons[1].classList.remove('active');
+            } else {
+                enDiv.style.display = 'none';
+                heDiv.style.display = 'block';
+                buttons[0].classList.remove('active');
+                buttons[1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
+
