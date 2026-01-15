@@ -77,6 +77,7 @@
         }
         .section { margin: 30px 0; }
         .hebrew { direction: rtl; text-align: right; }
+        .hebrew ul { margin: 10px 20px 10px 0; }
         .footer {
             text-align: center;
             padding: 30px 20px;
@@ -105,7 +106,7 @@
 
         <!-- ENGLISH VERSION -->
         <div id="english" class="section">
-            <p><strong>Last Updated:</strong> January 5, 2026</p>
+            <p><strong>Last Updated:</strong> January 15, 2026</p>
 
             <h2>1. Introduction</h2>
             <p>Welcome to <strong>Israel Trail Running</strong>. This mobile application helps trail runners discover routes and races across Israel.</p>
@@ -118,7 +119,6 @@
             <p>Our app does NOT require or collect:</p>
             <ul>
                 <li>❌ Name, email, or phone number</li>
-                <li>❌ GPS location or tracking</li>
                 <li>❌ Payment information</li>
                 <li>❌ User accounts or passwords</li>
                 <li>❌ Photos or personal files</li>
@@ -133,34 +133,52 @@
                 <li>✅ Usage analytics (which features you use)</li>
             </ul>
 
-            <h2>4. How We Use Data</h2>
+            <h2>4. Location Data (Optional)</h2>
+            <p>When you tap the <strong>"Near Me"</strong> button, we request access to your device's GPS location.</p>
+
+            <h3>How We Use Location:</h3>
+            <ul>
+                <li>✅ Determine which region of Israel you are in (North, Center, South, Jerusalem)</li>
+                <li>✅ Show trails and races near your current location</li>
+            </ul>
+
+            <h3>Important:</h3>
+            <div class="highlight">
+                <ul>
+                    <li>🔒 Your GPS coordinates are <strong>processed locally</strong> on your device</li>
+                    <li>🔒 We do <strong>NOT store or transmit</strong> your precise location to any server</li>
+                    <li>🔒 Location access is <strong>optional</strong> - you can deny permission and manually select a region</li>
+                </ul>
+            </div>
+
+            <h2>5. How We Use Data</h2>
             <ul>
                 <li>Display trail routes and race calendars</li>
                 <li>Fix bugs and improve performance</li>
                 <li>Understand which features are popular</li>
             </ul>
 
-            <h2>5. Third-Party Services</h2>
+            <h2>6. Third-Party Services</h2>
             <p>We use these services:</p>
             <ul>
                 <li><strong>Expo:</strong> App hosting and updates (<a href="https://expo.dev/privacy">Privacy Policy</a>)</li>
                 <li><strong>Wix API:</strong> Trail and race data</li>
             </ul>
 
-            <h2>6. Data Sharing</h2>
+            <h2>7. Data Sharing</h2>
             <p><strong>We do NOT sell or share your data with advertisers.</strong></p>
 
-            <h2>7. Your Rights</h2>
+            <h2>8. Your Rights</h2>
             <ul>
                 <li>Access your data (minimal)</li>
                 <li>Delete data (uninstall the app)</li>
                 <li>Israeli users: Protected under Privacy Protection Law, 1981</li>
             </ul>
 
-            <h2>8. Children's Privacy</h2>
+            <h2>9. Children's Privacy</h2>
             <p>Our app is safe for all ages. We don't collect personal information from anyone, including children.</p>
 
-            <h2>9. Contact Us</h2>
+            <h2>10. Contact Us</h2>
             <div class="contact-box">
                 <p><strong>📧 Email:</strong> israeltrailrunning@gmail.com</p>
                 <p><strong>👤 Developer:</strong> Israel Trail Running</p>
@@ -168,13 +186,13 @@
                 <p><strong>⏱️ Response Time:</strong> Within 30 days</p>
             </div>
 
-            <h2>10. Updates</h2>
+            <h2>11. Updates</h2>
             <p>We may update this policy. Check the "Last Updated" date at the top.</p>
         </div>
 
         <!-- HEBREW VERSION -->
         <div id="hebrew" class="section hebrew" style="display: none;">
-            <p><strong>עודכן לאחרונה:</strong> 5 בינואר 2026</p>
+            <p><strong>עודכן לאחרונה:</strong> 15 בינואר 2026</p>
 
             <h2>1. הקדמה</h2>
             <p>ברוכים הבאים ל<strong>ריצת שטח ישראל</strong>. אפליקציה זו עוזרת לרצי שטח לגלות מסלולים ומרוצים ברחבי ישראל.</p>
@@ -187,7 +205,6 @@
             <p>האפליקציה שלנו לא דורשת ולא אוספת:</p>
             <ul>
                 <li>❌ שם, דוא״ל או מספר טלפון</li>
-                <li>❌ מיקום GPS או מעקב</li>
                 <li>❌ פרטי תשלום</li>
                 <li>❌ חשבונות משתמש או סיסמאות</li>
                 <li>❌ תמונות או קבצים אישיים</li>
@@ -202,34 +219,52 @@
                 <li>✅ אנליטיקה של שימוש (אילו תכונות אתה משתמש)</li>
             </ul>
 
-            <h2>4. כיצד אנו משתמשים בנתונים</h2>
+            <h2>4. נתוני מיקום (אופציונלי)</h2>
+            <p>כאשר תלחץ על כפתור <strong>״קרוב אליי״</strong>, אנו מבקשים גישה למיקום ה-GPS של המכשיר שלך.</p>
+
+            <h3>כיצד אנו משתמשים במיקום:</h3>
+            <ul>
+                <li>✅ קביעת האזור בישראל בו אתה נמצא (צפון, מרכז, דרום, ירושלים)</li>
+                <li>✅ הצגת מסלולים ומרוצים קרובים למיקומך הנוכחי</li>
+            </ul>
+
+            <h3>חשוב:</h3>
+            <div class="highlight">
+                <ul>
+                    <li>🔒 קואורדינטות ה-GPS שלך <strong>מעובדות מקומית</strong> במכשיר שלך</li>
+                    <li>🔒 אנחנו <strong>לא שומרים ולא משדרים</strong> את המיקום המדויק שלך לשום שרת</li>
+                    <li>🔒 גישה למיקום היא <strong>אופציונלית</strong> - אתה יכול לסרב להרשאה ולבחור אזור ידנית</li>
+                </ul>
+            </div>
+
+            <h2>5. כיצד אנו משתמשים בנתונים</h2>
             <ul>
                 <li>הצגת מסלולי ריצה ולוח מרוצים</li>
                 <li>תיקון באגים ושיפור ביצועים</li>
                 <li>הבנה אילו תכונות פופולריות</li>
             </ul>
 
-            <h2>5. שירותי צד שלישי</h2>
+            <h2>6. שירותי צד שלישי</h2>
             <p>אנו משתמשים בשירותים אלה:</p>
             <ul>
                 <li><strong>Expo:</strong> אירוח אפליקציה ועדכונים (<a href="https://expo.dev/privacy">מדיניות פרטיות</a>)</li>
                 <li><strong>Wix API:</strong> נתוני מסלולים ומרוצים</li>
             </ul>
 
-            <h2>6. שיתוף נתונים</h2>
+            <h2>7. שיתוף נתונים</h2>
             <p><strong>איננו מוכרים או משתפים את הנתונים שלך עם מפרסמים.</strong></p>
 
-            <h2>7. הזכויות שלך</h2>
+            <h2>8. הזכויות שלך</h2>
             <ul>
                 <li>גישה לנתונים שלך (מינימלי)</li>
                 <li>מחיקת נתונים (הסר את האפליקציה)</li>
                 <li>משתמשים ישראלים: מוגנים תחת חוק הגנת הפרטיות, תשמ״א-1981</li>
             </ul>
 
-            <h2>8. פרטיות ילדים</h2>
+            <h2>9. פרטיות ילדים</h2>
             <p>האפליקציה שלנו בטוחה לכל הגילאים. איננו אוספים מידע אישי מאף אחד, כולל ילדים.</p>
 
-            <h2>9. צור קשר</h2>
+            <h2>10. צור קשר</h2>
             <div class="contact-box">
                 <p><strong>📧 דוא״ל:</strong> israeltrailrunning@gmail.com</p>
                 <p><strong>👤 מפתח:</strong> Israel Trail Running</p>
@@ -237,7 +272,7 @@
                 <p><strong>⏱️ זמן תגובה:</strong> תוך 30 יום</p>
             </div>
 
-            <h2>10. עדכונים</h2>
+            <h2>11. עדכונים</h2>
             <p>אנו עשויים לעדכן מדיניות זו. בדוק את תאריך ״עודכן לאחרונה״ בחלק העליון.</p>
         </div>
 
@@ -268,4 +303,3 @@
     </script>
 </body>
 </html>
-
