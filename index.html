@@ -28,7 +28,7 @@
         }
         h1 { font-size: 2.5em; margin-bottom: 10px; }
         h2 { color: #2e8b57; margin: 30px 0 15px; border-bottom: 2px solid #2e8b57; padding-bottom: 10px; }
-        h3 { color: #555; margin: 20px 0 10px; }
+        h3 { color: #555; margin: 20px 0 10px; font-size: 1.2em; }
         p { margin: 10px 0; }
         ul { margin: 10px 0 10px 20px; }
         li { margin: 5px 0; }
@@ -75,9 +75,15 @@
             margin: 15px 0;
             border-radius: 5px;
         }
+        .info-box {
+            background: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196f3;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
         .section { margin: 30px 0; }
         .hebrew { direction: rtl; text-align: right; }
-        .hebrew ul { margin: 10px 20px 10px 0; }
         .footer {
             text-align: center;
             padding: 30px 20px;
@@ -106,25 +112,46 @@
 
         <!-- ENGLISH VERSION -->
         <div id="english" class="section">
-            <p><strong>Last Updated:</strong> January 15, 2026</p>
+            <p><strong>Last Updated:</strong> February 14, 2026</p>
 
             <h2>1. Introduction</h2>
             <p>Welcome to <strong>Israel Trail Running</strong>. This mobile application helps trail runners discover routes and races across Israel.</p>
             
             <div class="highlight">
-                <strong>⚠️ Important:</strong> We do NOT collect personal information. Your privacy is our priority.
+                <strong>⚠️ Important:</strong> Most features work without an account. Personal information is only collected if you choose to contribute trails.
             </div>
 
-            <h2>2. What We DON'T Collect</h2>
-            <p>Our app does NOT require or collect:</p>
+            <h2>2. Data Collection</h2>
+            
+            <h3>2.1 For All Users (No Account Required)</h3>
+            <p>You can browse trails, view races, and download GPX files <strong>without creating an account</strong>.</p>
+            
+            <div class="info-box">
+                <p><strong>We do NOT collect:</strong></p>
+                <ul>
+                    <li>❌ Name, email, or phone number (unless you create an account)</li>
+                    <li>❌ Payment information</li>
+                    <li>❌ Photos or personal files</li>
+                    <li>❌ Browsing history</li>
+                </ul>
+            </div>
+
+            <h3>2.2 For Trail Contributors (Optional Account)</h3>
+            <p>If you want to <strong>contribute new trails</strong> to the community, you can create a contributor account.</p>
+            
+            <p><strong>We collect:</strong></p>
             <ul>
-                <li>❌ Name, email, or phone number</li>
-                <li>❌ Payment information</li>
-                <li>❌ User accounts or passwords</li>
-                <li>❌ Photos or personal files</li>
+                <li>✅ <strong>Email address</strong> (for login and notifications)</li>
+                <li>✅ <strong>Name</strong> (displayed on your trail contributions)</li>
+                <li>✅ <strong>Phone number</strong> (optional, for account verification)</li>
+                <li>✅ <strong>Trails you contribute</strong> (publicly visible)</li>
             </ul>
 
-            <h2>3. What We Automatically Collect</h2>
+            <div class="info-box">
+                <p><strong>📝 Note:</strong> Creating an account is <strong>completely optional</strong>. You can use 99% of the app's features without logging in.</p>
+            </div>
+
+            <h3>2.3 Automatic Technical Data</h3>
             <p>We collect minimal technical data to make the app work:</p>
             <ul>
                 <li>✅ Device type and OS version</li>
@@ -133,50 +160,71 @@
                 <li>✅ Usage analytics (which features you use)</li>
             </ul>
 
-            <h2>4. Location Data (Optional)</h2>
-            <p>When you tap the <strong>"Near Me"</strong> button, we request access to your device's GPS location.</p>
-
-            <h3>How We Use Location:</h3>
+            <h2>3. User Accounts (Optional)</h2>
+            
+            <h3>Who Needs an Account?</h3>
             <ul>
-                <li>✅ Determine which region of Israel you are in (North, Center, South, Jerusalem)</li>
-                <li>✅ Show trails and races near your current location</li>
+                <li>❌ <strong>Browsing trails</strong> - No account needed</li>
+                <li>❌ <strong>Viewing race calendar</strong> - No account needed</li>
+                <li>❌ <strong>Downloading GPX files</strong> - No account needed</li>
+                <li>❌ <strong>Using 3D terrain view</strong> - No account needed</li>
+                <li>✅ <strong>Contributing new trails</strong> - Account required</li>
             </ul>
 
-            <h3>Important:</h3>
-            <div class="highlight">
-                <ul>
-                    <li>🔒 Your GPS coordinates are <strong>processed locally</strong> on your device</li>
-                    <li>🔒 We do <strong>NOT store or transmit</strong> your precise location to any server</li>
-                    <li>🔒 Location access is <strong>optional</strong> - you can deny permission and manually select a region</li>
-                </ul>
-            </div>
+            <h3>Account Security</h3>
+            <ul>
+                <li>🔒 Passwords are encrypted using industry-standard methods</li>
+                <li>🔒 We never share your email with third parties</li>
+                <li>🔒 You can delete your account anytime by contacting us</li>
+                <li>🔒 Your personal data is stored securely on Supabase servers</li>
+            </ul>
 
-            <h2>5. How We Use Data</h2>
+            <h2>4. How We Use Data</h2>
             <ul>
                 <li>Display trail routes and race calendars</li>
+                <li>Enable trail contributions from community members</li>
+                <li>Send notifications about trail updates (if you opt-in)</li>
                 <li>Fix bugs and improve performance</li>
                 <li>Understand which features are popular</li>
             </ul>
 
-            <h2>6. Third-Party Services</h2>
+            <h2>5. Third-Party Services</h2>
             <p>We use these services:</p>
             <ul>
                 <li><strong>Expo:</strong> App hosting and updates (<a href="https://expo.dev/privacy">Privacy Policy</a>)</li>
-                <li><strong>Wix API:</strong> Trail and race data</li>
+                <li><strong>Supabase:</strong> Database and authentication (<a href="https://supabase.com/privacy">Privacy Policy</a>)</li>
+                <li><strong>Mapbox:</strong> Maps and terrain visualization (<a href="https://www.mapbox.com/legal/privacy">Privacy Policy</a>)</li>
             </ul>
 
-            <h2>7. Data Sharing</h2>
-            <p><strong>We do NOT sell or share your data with advertisers.</strong></p>
-
-            <h2>8. Your Rights</h2>
+            <h2>6. Data Sharing</h2>
+            <p><strong>We do NOT sell or share your personal data with advertisers.</strong></p>
+            
+            <p>We only share data in these cases:</p>
             <ul>
-                <li>Access your data (minimal)</li>
-                <li>Delete data (uninstall the app)</li>
-                <li>Israeli users: Protected under Privacy Protection Law, 1981</li>
+                <li>✅ Your <strong>name and contributed trails</strong> are publicly visible in the app</li>
+                <li>✅ With service providers (Supabase, Expo) to operate the app</li>
+                <li>✅ If required by law or legal process</li>
+            </ul>
+
+            <h2>7. Your Rights</h2>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of your data</li>
+                <li><strong>Correction:</strong> Update your account information</li>
+                <li><strong>Deletion:</strong> Delete your account and data</li>
+                <li><strong>Opt-out:</strong> Unsubscribe from notifications</li>
+                <li><strong>Israeli users:</strong> Protected under Privacy Protection Law, 1981</li>
+                <li><strong>EU users:</strong> GDPR rights apply</li>
+            </ul>
+
+            <h2>8. Data Retention</h2>
+            <ul>
+                <li>Account data: Retained until you delete your account</li>
+                <li>Trail contributions: May remain public after account deletion (attributed to "Anonymous")</li>
+                <li>Analytics data: Anonymized and retained for 2 years</li>
             </ul>
 
             <h2>9. Children's Privacy</h2>
-            <p>Our app is safe for all ages. We don't collect personal information from anyone, including children.</p>
+            <p>Our app is safe for all ages. We don't knowingly collect personal information from children under 13 without parental consent. If you're under 13, please ask a parent before creating an account.</p>
 
             <h2>10. Contact Us</h2>
             <div class="contact-box">
@@ -186,31 +234,54 @@
                 <p><strong>⏱️ Response Time:</strong> Within 30 days</p>
             </div>
 
+            <p><strong>For privacy requests (access, deletion, correction):</strong> Email us with "Privacy Request" in the subject line.</p>
+
             <h2>11. Updates</h2>
-            <p>We may update this policy. Check the "Last Updated" date at the top.</p>
+            <p>We may update this policy. Check the "Last Updated" date at the top. Significant changes will be announced in the app.</p>
         </div>
 
         <!-- HEBREW VERSION -->
         <div id="hebrew" class="section hebrew" style="display: none;">
-            <p><strong>עודכן לאחרונה:</strong> 15 בינואר 2026</p>
+            <p><strong>עודכן לאחרונה:</strong> 14 בפברואר 2026</p>
 
             <h2>1. הקדמה</h2>
             <p>ברוכים הבאים ל<strong>ריצת שטח ישראל</strong>. אפליקציה זו עוזרת לרצי שטח לגלות מסלולים ומרוצים ברחבי ישראל.</p>
             
             <div class="highlight">
-                <strong>⚠️ חשוב:</strong> איננו אוספים מידע אישי. הפרטיות שלך היא בעדיפות עליונה.
+                <strong>⚠️ חשוב:</strong> רוב התכונות עובדות ללא חשבון. מידע אישי נאסף רק אם תבחר לתרום מסלולים.
             </div>
 
-            <h2>2. מה שאנחנו לא אוספים</h2>
-            <p>האפליקציה שלנו לא דורשת ולא אוספת:</p>
+            <h2>2. איסוף נתונים</h2>
+            
+            <h3>2.1 לכל המשתמשים (ללא צורך בחשבון)</h3>
+            <p>אתה יכול לדפדף במסלולים, לצפות במרוצים ולהוריד קבצי GPX <strong>ללא יצירת חשבון</strong>.</p>
+            
+            <div class="info-box">
+                <p><strong>אנחנו לא אוספים:</strong></p>
+                <ul>
+                    <li>❌ שם, דוא״ל או מספר טלפון (אלא אם תיצור חשבון)</li>
+                    <li>❌ פרטי תשלום</li>
+                    <li>❌ תמונות או קבצים אישיים</li>
+                    <li>❌ היסטוריית גלישה</li>
+                </ul>
+            </div>
+
+            <h3>2.2 לתורמי מסלולים (חשבון אופציונלי)</h3>
+            <p>אם אתה רוצה <strong>לתרום מסלולים חדשים</strong> לקהילה, אתה יכול ליצור חשבון תורם.</p>
+            
+            <p><strong>אנחנו אוספים:</strong></p>
             <ul>
-                <li>❌ שם, דוא״ל או מספר טלפון</li>
-                <li>❌ פרטי תשלום</li>
-                <li>❌ חשבונות משתמש או סיסמאות</li>
-                <li>❌ תמונות או קבצים אישיים</li>
+                <li>✅ <strong>כתובת דוא״ל</strong> (להתחברות והתראות)</li>
+                <li>✅ <strong>שם</strong> (מוצג על תרומות המסלולים שלך)</li>
+                <li>✅ <strong>מספר טלפון</strong> (אופציונלי, לאימות חשבון)</li>
+                <li>✅ <strong>מסלולים שתרמת</strong> (גלויים לציבור)</li>
             </ul>
 
-            <h2>3. מה שאנחנו אוספים אוטומטית</h2>
+            <div class="info-box">
+                <p><strong>📝 הערה:</strong> יצירת חשבון היא <strong>אופציונלית לחלוטין</strong>. אתה יכול להשתמש ב-99% מהתכונות של האפליקציה ללא התחברות.</p>
+            </div>
+
+            <h3>2.3 נתונים טכניים אוטומטיים</h3>
             <p>אנו אוספים נתונים טכניים מינימליים כדי שהאפליקציה תעבוד:</p>
             <ul>
                 <li>✅ סוג מכשיר וגרסת מערכת הפעלה</li>
@@ -219,50 +290,71 @@
                 <li>✅ אנליטיקה של שימוש (אילו תכונות אתה משתמש)</li>
             </ul>
 
-            <h2>4. נתוני מיקום (אופציונלי)</h2>
-            <p>כאשר תלחץ על כפתור <strong>״קרוב אליי״</strong>, אנו מבקשים גישה למיקום ה-GPS של המכשיר שלך.</p>
-
-            <h3>כיצד אנו משתמשים במיקום:</h3>
+            <h2>3. חשבונות משתמש (אופציונלי)</h2>
+            
+            <h3>מי צריך חשבון?</h3>
             <ul>
-                <li>✅ קביעת האזור בישראל בו אתה נמצא (צפון, מרכז, דרום, ירושלים)</li>
-                <li>✅ הצגת מסלולים ומרוצים קרובים למיקומך הנוכחי</li>
+                <li>❌ <strong>דפדוף במסלולים</strong> - אין צורך בחשבון</li>
+                <li>❌ <strong>צפייה בלוח מרוצים</strong> - אין צורך בחשבון</li>
+                <li>❌ <strong>הורדת קבצי GPX</strong> - אין צורך בחשבון</li>
+                <li>❌ <strong>שימוש בתצוגת תלת-ממד</strong> - אין צורך בחשבון</li>
+                <li>✅ <strong>תרומת מסלולים חדשים</strong> - נדרש חשבון</li>
             </ul>
 
-            <h3>חשוב:</h3>
-            <div class="highlight">
-                <ul>
-                    <li>🔒 קואורדינטות ה-GPS שלך <strong>מעובדות מקומית</strong> במכשיר שלך</li>
-                    <li>🔒 אנחנו <strong>לא שומרים ולא משדרים</strong> את המיקום המדויק שלך לשום שרת</li>
-                    <li>🔒 גישה למיקום היא <strong>אופציונלית</strong> - אתה יכול לסרב להרשאה ולבחור אזור ידנית</li>
-                </ul>
-            </div>
+            <h3>אבטחת חשבון</h3>
+            <ul>
+                <li>🔒 סיסמאות מוצפנות בשיטות תקן תעשייה</li>
+                <li>🔒 לעולם לא נשתף את הדוא״ל שלך עם צדדים שלישיים</li>
+                <li>🔒 אתה יכול למחוק את החשבון שלך בכל עת על ידי פנייה אלינו</li>
+                <li>🔒 הנתונים האישיים שלך מאוחסנים בצורה מאובטחת בשרתי Supabase</li>
+            </ul>
 
-            <h2>5. כיצד אנו משתמשים בנתונים</h2>
+            <h2>4. כיצד אנו משתמשים בנתונים</h2>
             <ul>
                 <li>הצגת מסלולי ריצה ולוח מרוצים</li>
+                <li>אפשר תרומות מסלולים מחברי הקהילה</li>
+                <li>שליחת התראות על עדכוני מסלולים (אם בחרת)</li>
                 <li>תיקון באגים ושיפור ביצועים</li>
                 <li>הבנה אילו תכונות פופולריות</li>
             </ul>
 
-            <h2>6. שירותי צד שלישי</h2>
+            <h2>5. שירותי צד שלישי</h2>
             <p>אנו משתמשים בשירותים אלה:</p>
             <ul>
                 <li><strong>Expo:</strong> אירוח אפליקציה ועדכונים (<a href="https://expo.dev/privacy">מדיניות פרטיות</a>)</li>
-                <li><strong>Wix API:</strong> נתוני מסלולים ומרוצים</li>
+                <li><strong>Supabase:</strong> מסד נתונים ואימות (<a href="https://supabase.com/privacy">מדיניות פרטיות</a>)</li>
+                <li><strong>Mapbox:</strong> מפות ותצוגת שטח (<a href="https://www.mapbox.com/legal/privacy">מדיניות פרטיות</a>)</li>
             </ul>
 
-            <h2>7. שיתוף נתונים</h2>
-            <p><strong>איננו מוכרים או משתפים את הנתונים שלך עם מפרסמים.</strong></p>
-
-            <h2>8. הזכויות שלך</h2>
+            <h2>6. שיתוף נתונים</h2>
+            <p><strong>איננו מוכרים או משתפים את הנתונים האישיים שלך עם מפרסמים.</strong></p>
+            
+            <p>אנו משתפים נתונים רק במקרים אלה:</p>
             <ul>
-                <li>גישה לנתונים שלך (מינימלי)</li>
-                <li>מחיקת נתונים (הסר את האפליקציה)</li>
-                <li>משתמשים ישראלים: מוגנים תחת חוק הגנת הפרטיות, תשמ״א-1981</li>
+                <li>✅ <strong>השם והמסלולים שתרמת</strong> גלויים לציבור באפליקציה</li>
+                <li>✅ עם ספקי שירות (Supabase, Expo) להפעלת האפליקציה</li>
+                <li>✅ אם נדרש על פי חוק או תהליך משפטי</li>
+            </ul>
+
+            <h2>7. הזכויות שלך</h2>
+            <ul>
+                <li><strong>גישה:</strong> בקש עותק של הנתונים שלך</li>
+                <li><strong>תיקון:</strong> עדכן את פרטי החשבון שלך</li>
+                <li><strong>מחיקה:</strong> מחק את החשבון והנתונים שלך</li>
+                <li><strong>ביטול הסכמה:</strong> בטל מנוי להתראות</li>
+                <li><strong>משתמשים ישראלים:</strong> מוגנים תחת חוק הגנת הפרטיות, תשמ״א-1981</li>
+                <li><strong>משתמשי EU:</strong> זכויות GDPR חלות</li>
+            </ul>
+
+            <h2>8. שמירת נתונים</h2>
+            <ul>
+                <li>נתוני חשבון: נשמרים עד שתמחק את החשבון שלך</li>
+                <li>תרומות מסלולים: עשויות להישאר ציבוריות לאחר מחיקת חשבון (מיוחסות ל״אנונימי״)</li>
+                <li>נתוני אנליטיקה: אנונימיים ונשמרים למשך שנתיים</li>
             </ul>
 
             <h2>9. פרטיות ילדים</h2>
-            <p>האפליקציה שלנו בטוחה לכל הגילאים. איננו אוספים מידע אישי מאף אחד, כולל ילדים.</p>
+            <p>האפליקציה שלנו בטוחה לכל הגילאים. איננו אוספים במודע מידע אישי מילדים מתחת לגיל 13 ללא הסכמת הורים. אם אתה מתחת לגיל 13, אנא בקש מהורה לפני יצירת חשבון.</p>
 
             <h2>10. צור קשר</h2>
             <div class="contact-box">
@@ -272,8 +364,10 @@
                 <p><strong>⏱️ זמן תגובה:</strong> תוך 30 יום</p>
             </div>
 
+            <p><strong>לבקשות פרטיות (גישה, מחיקה, תיקון):</strong> שלח לנו דוא״ל עם ״בקשת פרטיות״ בנושא.</p>
+
             <h2>11. עדכונים</h2>
-            <p>אנו עשויים לעדכן מדיניות זו. בדוק את תאריך ״עודכן לאחרונה״ בחלק העליון.</p>
+            <p>אנו עשויים לעדכן מדיניות זו. בדוק את תאריך ״עודכן לאחרונה״ בחלק העליון. שינויים משמעותיים יוכרזו באפליקציה.</p>
         </div>
 
         <div class="footer">
